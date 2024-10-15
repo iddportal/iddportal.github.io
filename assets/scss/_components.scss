@@ -1,0 +1,333 @@
+@use "_variables.scss" as v;
+
+// header
+
+.header {
+  position: absolute;
+  z-index: 10;
+  height: 25dvmin;
+  width: 25dvmin;
+  // border-radius: 50%;
+  color: v.$white;
+  background-color: v.$navy;
+  top: calc(50dvh - 12.5dvmin);
+  left: calc(50vw - 12.5dvmin);
+}
+
+// body
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.img {
+  width: 100%;
+}
+
+.border {
+  border-style: solid;
+  border-width: 34px;
+  box-sizing: border-box;
+}
+// mainvisual
+
+.main {
+  width: 100vw;
+  // height: calc(100dvh - 56px);
+  height: 100dvh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @include v.res("sp") {
+    flex-direction: column;
+  }
+}
+
+.main_flex {
+  display: flex;
+  flex-direction: column;
+  width: min(100dvh, 50vw);
+  @include v.res("sp") {
+    flex-direction: row;
+    width: auto;
+    height: min(100vw, 50dvh);
+  }
+}
+
+.main_visual {
+  // width: min(50vw, 100dvh - 56px);
+  // height: min(50vw, 100dvh - 56px);
+  width: min(50vw, 100dvh);
+  height: min(50vw, 100dvh);
+  @include v.res("sp") {
+    // width: min(100vw, 50dvh - 28px);
+    // height: min(100vw, 50dvh - 28px);
+    width: min(100vw, 50dvh);
+    height: min(100vw, 50dvh);
+  }
+}
+
+.main_visuals {
+  width: 50vw;
+  height: 100dvh;
+  @include v.res("sp") {
+    // width: min(100vw, 50dvh - 28px);
+    // height: min(100vw, 50dvh - 28px);
+    width: 100vw;
+    height: 50dvh;
+  }
+}
+
+.main_blank {
+  width: 50vw;
+  // height: calc(100dvh - 50vw - 56px);
+  height: calc(100dvh - 50vw);
+  // background-image: repeating-linear-gradient(
+  //     90deg,
+  //     transparent,
+  //     transparent 10px,
+  //     v.$white 10px,
+  //     v.$white 20px
+  //   );
+    @include v.res("sp") {
+    // width: calc(100vw - 50dvh + 28px);
+    // height: calc(50dvh - 28px);
+    width: calc(100vw - 50dvh);
+    height: 50dvh;
+    // background-image: repeating-linear-gradient(
+    //     0deg,
+    //     transparent,
+    //     transparent 10px,
+    //     v.$white 10px,
+    //     v.$white 20px
+    //   );
+  }
+}
+
+.main_edge {
+  width: calc(50vw - 100dvh);
+  height: 100dvh;
+  // background-image: repeating-linear-gradient(
+  //     0deg,
+  //     transparent,
+  //     transparent 10px,
+  //     v.$white 10px,
+  //     v.$white 20px
+  //   );
+  @include v.res("sp") {
+    width: 100vw;
+    height: calc(50dvh - 100vw);
+    // background-image: repeating-linear-gradient(
+    //     90deg,
+    //     transparent,
+    //     transparent 10px,
+    //     v.$white 10px,
+    //     v.$white 20px
+    //   );
+  }
+}
+
+.main_one {
+  width: 100vw;
+  height: calc(100dvh - 56px);
+  display: flex;
+  @include v.res("sp") {
+    flex-direction: column;
+  }
+}
+
+.main_visual_one {
+  width: calc(100dvh - 56px);
+  height: calc(100dvh - 56px);
+  @include v.res("sp") {
+    width: 100vw;
+    height: 100vw;
+  }
+}
+
+.main_blank_one {
+  width: calc(50vw - 50dvh + 28px);
+  height: calc(100dvh - 56px);
+  @include v.res("sp") {
+    width: 100vw;
+    height: calc(50dvh - 50vw - 28px);
+  }
+}
+
+// links
+
+.links {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link_year {
+  display: flex;
+  width: 25vw;
+  height: 25vw;
+  @include v.res("sp") {
+    width: 50vw;
+    height: 50vw;
+  }
+}
+
+.link_visual {
+  display: flex;
+  width: 25vw;
+  height: 25vw;
+  // opacity: 0;
+  @include v.res("sp") {
+    width: 50vw;
+    height: 50vw;
+  }
+}
+
+// .link_visual:hover {
+//   filter: blur(5px);
+//   // opacity: 1;
+// }
+
+.link_caption {
+  display: flex;
+  width: 25vw;
+  height: 25vw;
+  // opacity: 0;
+    // background-image: repeating-linear-gradient(
+    //   0deg,
+    //   transparent,
+    //   transparent 10px,
+    //   v.$white 10px,
+    //   v.$white 20px
+    // );
+  @include v.res("sp") {
+    width: 50vw;
+    height: 50vw;
+  }
+}
+
+.visual_caption {
+  display: flex;
+  width: 25vw;
+  height: 25vw;
+  // opacity: 0;
+  z-index: -1;
+  @include v.res("sp") {
+    width: 50vw;
+    height: 50vw;
+  }
+}
+
+.visual_caption:hov {
+  // display: inline-block;
+  z-index: 10;
+  // opacity: 1;
+}
+
+.link_head {
+  display: flex;
+  width: 100vw;
+  height: 12.5vw;
+  @include v.res("sp") {
+    width: 100vw;
+    height: 25vw;
+  }
+}
+
+.link_head2 {
+  display: flex;
+  width: 100vw;
+  height: 10vw;
+  @include v.res("sp") {
+    width: 100vw;
+    height: 20vw;
+  }
+}
+
+.year {
+  display: inline-block;
+  padding: 5px;
+  color: v.$white;
+  background-color: v.$navy;
+  font-weight: 1000;
+  font-size: max(16px, 2dvmin);
+  @include v.res("sp") {
+    font-size: 3.5dvmin;
+  }
+}
+
+.head {
+  display: inline-block;
+  padding: 5px;
+  color: v.$navy;
+  background-color: v.$white;
+  font-weight: 1000;
+  font-size: max(16px, 1.8dvmin);
+  @include v.res("sp") {
+    font-size: 3.5dvmin;
+  }
+}
+
+.caption {
+  display: inline-block;
+  padding: 5px;
+  color: v.$navy;
+  background-color: v.$white;
+  font-weight: 800;
+  font-size: max(12px, 1.5dvmin);
+  overflow: hidden;
+  @include v.res("sp") {
+    font-size: 2.8dvmin;
+  }
+  .left {
+    display: flex;
+    text-align: left;
+  }
+}
+
+// .caption_hov {
+//   position: absolute;
+//   display: inline-block;
+//   padding: 5px;
+//   color: v.$navy;
+//   background-color: v.$white;
+//   font-weight: 800;
+//   font-size: max(12px , 1.5dvmin);
+//   overflow: hidden;
+//   @include v.res("sp") {
+//     font-size: 2.8dvmin;
+//   }
+// }
+
+// fotter
+// 年度とwebサイトののリンクを追加したら、.fotterのwidthを調整してください
+.fotter {
+  width: 25vw;
+  //   width: 50vw;
+  //   width: 75vw;
+  //   width: 100vw;
+  height: 25vw;
+  color: v.$white;
+  @include v.res("sp") {
+    height: 50vw;
+    width: 50vw;
+    // width: 100vw;
+  }
+}
+
+.copyright {
+  padding: 2.5vw;
+  font-size: 12px;
+  font-size: max(12px, 1.5dvmin);
+  @include v.res("sp") {
+    font-size: 2.2dvmin;
+  }
+}
