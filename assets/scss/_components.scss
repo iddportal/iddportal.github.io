@@ -97,7 +97,7 @@
   //     v.$white 10px,
   //     v.$white 20px
   //   );
-    @include v.res("sp") {
+  @include v.res("sp") {
     // width: calc(100vw - 50dvh + 28px);
     // height: calc(50dvh - 28px);
     width: calc(100vw - 50dvh);
@@ -109,6 +109,36 @@
     //     v.$white 10px,
     //     v.$white 20px
     //   );
+  }
+  .id {
+    // display: none;
+    white-space: nowrap;
+    padding-bottom: 8px;
+    display: flex;
+    color: v.$white;
+    transform-origin: center center;
+    transform: rotate(180deg) translate(4px, 4px);
+    @include v.res("sp") {
+      display: flex;
+      color: v.$white;
+      transform-origin: left bottom;
+      transform: rotate(90deg) translate(-24px, 4px);
+    }
+  }
+  .ma {
+    padding-bottom: 8px;
+    display: flex;
+    color: v.$white;
+    transform-origin: center center;
+    transform: translate(4px, calc(100dvh - 50vw - 24px));
+    @include v.res("sp") {
+      display: flex;
+      color: v.$white;
+      position: absolute;
+      bottom: 0;
+      transform-origin: left top;
+      transform: rotate(-90deg) translate(-24px, calc(100vw - 50dvh - 24px));
+    }
   }
 }
 
@@ -132,6 +162,23 @@
     //     v.$white 10px,
     //     v.$white 20px
     //   );
+  }
+  .id {
+    display: none;
+    @include v.res("sp") {
+      display: flex;
+      color: v.$white;
+      transform: translate(4px);
+    }
+  }
+  .ma {
+    display: none;
+    @include v.res("sp") {
+      display: flex;
+      color: v.$white;
+      transform-origin: center center;
+      transform: rotate(180deg) translate(4px, 4px);
+    }
   }
 }
 
@@ -201,13 +248,13 @@
   width: 25vw;
   height: 25vw;
   // opacity: 0;
-    // background-image: repeating-linear-gradient(
-    //   0deg,
-    //   transparent,
-    //   transparent 10px,
-    //   v.$white 10px,
-    //   v.$white 20px
-    // );
+  // background-image: repeating-linear-gradient(
+  //   0deg,
+  //   transparent,
+  //   transparent 10px,
+  //   v.$white 10px,
+  //   v.$white 20px
+  // );
   @include v.res("sp") {
     width: 50vw;
     height: 50vw;
