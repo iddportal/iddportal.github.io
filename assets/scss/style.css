@@ -426,7 +426,7 @@ svg {
     position: absolute;
     bottom: 0;
     transform-origin: left top;
-    transform: rotate(-90deg) translate(-24px, calc(100vw - 50dvh - 24px));
+    transform: rotate(-90deg) translate(-28px, calc(100vw - 50dvh - 24px));
   }
 }
 
