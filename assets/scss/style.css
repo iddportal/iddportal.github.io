@@ -389,6 +389,7 @@ svg {
 .main_blank {
   width: 50vw;
   height: calc(100dvh - 50vw);
+  overflow: hidden;
 }
 @media screen and (orientation: portrait) {
   .main_blank {
@@ -402,14 +403,12 @@ svg {
   display: flex;
   color: #ffffff;
   transform-origin: center center;
-  transform: rotate(180deg) translate(4px, 4px);
+  transform: translate(4px);
 }
 @media screen and (orientation: portrait) {
   .main_blank .id {
-    display: flex;
-    color: #ffffff;
     transform-origin: left bottom;
-    transform: rotate(90deg) translate(-24px, 4px);
+    transform: rotate(90deg) translate(-28px, 8px);
   }
 }
 .main_blank .ma {
@@ -417,12 +416,10 @@ svg {
   display: flex;
   color: #ffffff;
   transform-origin: center center;
-  transform: translate(4px, calc(100dvh - 50vw - 24px));
+  transform: translate(calc(50vw - 79.33px), calc(100dvh - 50vw - 24px));
 }
 @media screen and (orientation: portrait) {
   .main_blank .ma {
-    display: flex;
-    color: #ffffff;
     position: absolute;
     bottom: 0;
     transform-origin: left top;
@@ -433,6 +430,7 @@ svg {
 .main_edge {
   width: calc(50vw - 100dvh);
   height: 100dvh;
+  overflow: hidden;
 }
 @media screen and (orientation: portrait) {
   .main_edge {
@@ -441,24 +439,32 @@ svg {
   }
 }
 .main_edge .id {
-  display: none;
+  padding-bottom: 8px;
+  display: flex;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  transform-origin: left top;
+  transform: rotate(-90deg) translate(-28px, calc(50vw - 100dvh - 24px));
 }
 @media screen and (orientation: portrait) {
   .main_edge .id {
-    display: flex;
-    color: #ffffff;
-    transform: translate(4px);
+    position: relative;
+    transform: translate(calc(100vw - 146.29px), calc(50dvh - 100vw - 24px));
   }
 }
 .main_edge .ma {
-  display: none;
+  white-space: nowrap;
+  padding-bottom: 8px;
+  display: flex;
+  color: #ffffff;
+  transform-origin: left bottom;
+  transform: rotate(90deg) translate(-28px, 8px);
 }
 @media screen and (orientation: portrait) {
   .main_edge .ma {
-    display: flex;
-    color: #ffffff;
     transform-origin: center center;
-    transform: rotate(180deg) translate(4px, 4px);
+    transform: translate(4px);
   }
 }
 

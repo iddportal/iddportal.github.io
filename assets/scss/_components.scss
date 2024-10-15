@@ -90,6 +90,7 @@
   width: 50vw;
   // height: calc(100dvh - 50vw - 56px);
   height: calc(100dvh - 50vw);
+  overflow: hidden;
   // background-image: repeating-linear-gradient(
   //     90deg,
   //     transparent,
@@ -117,12 +118,10 @@
     display: flex;
     color: v.$white;
     transform-origin: center center;
-    transform: rotate(180deg) translate(4px, 4px);
+    transform: translate(4px);
     @include v.res("sp") {
-      display: flex;
-      color: v.$white;
       transform-origin: left bottom;
-      transform: rotate(90deg) translate(-24px, 4px);
+      transform: rotate(90deg) translate(-28px, 8px);
     }
   }
   .ma {
@@ -130,10 +129,8 @@
     display: flex;
     color: v.$white;
     transform-origin: center center;
-    transform: translate(4px, calc(100dvh - 50vw - 24px));
+    transform: translate(calc(50vw - 79.33px), calc(100dvh - 50vw - 24px));
     @include v.res("sp") {
-      display: flex;
-      color: v.$white;
       position: absolute;
       bottom: 0;
       transform-origin: left top;
@@ -145,6 +142,7 @@
 .main_edge {
   width: calc(50vw - 100dvh);
   height: 100dvh;
+  overflow: hidden;
   // background-image: repeating-linear-gradient(
   //     0deg,
   //     transparent,
@@ -164,20 +162,28 @@
     //   );
   }
   .id {
-    display: none;
+    padding-bottom: 8px;
+    display: flex;
+    color: v.$white;
+    position: absolute;
+    bottom: 0;
+    transform-origin: left top;
+    transform: rotate(-90deg) translate(-28px, calc(50vw - 100dvh - 24px));
     @include v.res("sp") {
-      display: flex;
-      color: v.$white;
-      transform: translate(4px);
+      position: relative;
+      transform: translate(calc(100vw - 146.29px), calc(50dvh - 100vw - 24px));
     }
   }
   .ma {
-    display: none;
+    white-space: nowrap;
+    padding-bottom: 8px;
+    display: flex;
+    color: v.$white;
+    transform-origin: left bottom;
+    transform: rotate(90deg) translate(-28px, 8px);
     @include v.res("sp") {
-      display: flex;
-      color: v.$white;
       transform-origin: center center;
-      transform: rotate(180deg) translate(4px, 4px);
+      transform: translate(4px);
     }
   }
 }
