@@ -189,8 +189,8 @@ select {
 }
 
 body {
-  font-family: "Noto Sans JP", sans-serif;
-  font-weight: 200;
+  font-family: "itc-avant-garde-gothic-pro", "hiragino-kaku-gothic-pron", "Noto Sans JP", sans-serif;
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
   color: #000000;
@@ -314,6 +314,15 @@ svg {
   background-color: #374466;
   top: calc(50dvh - 12.5dvmin);
   left: calc(50vw - 12.5dvmin);
+  font-family: "itc-avant-garde-gothic-pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3dvmin;
+  line-height: 1.1em;
+}
+
+.header.center {
+  text-align: left;
 }
 
 .flex {
@@ -589,7 +598,7 @@ svg {
   padding: 5px;
   color: #ffffff;
   background-color: #374466;
-  font-weight: 1000;
+  font-weight: 400;
   font-size: max(16px, 2dvmin);
 }
 @media screen and (orientation: portrait) {
@@ -617,7 +626,6 @@ svg {
   padding: 5px;
   color: #374466;
   background-color: #ffffff;
-  font-weight: 800;
   font-size: max(12px, 1.5dvmin);
   overflow: hidden;
 }

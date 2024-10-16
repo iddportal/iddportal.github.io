@@ -100,14 +100,13 @@ $navy: #374466;
 // fonts & texts
 
 @mixin gothic() {
-  font-family: dnp-shuei-gothic-gin-std, sans-serif;
-  font-weight: 400;
+  font-family: "hiragino-kaku-gothic-pron", sans-serif;
+  font-weight: 600;
   font-style: normal;
-  letter-spacing: 0.1em;
 }
 
 @mixin eng() {
-  font-family: chapman-extended, dnp-shuei-ymincho-std, sans-serif;
+  font-family: "itc-avant-garde-gothic-pro", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
@@ -120,8 +119,8 @@ $navy: #374466;
 }
 
 body {
-  font-family: "Noto Sans JP", sans-serif;
-  font-weight: 200;
+  font-family: "itc-avant-garde-gothic-pro", "hiragino-kaku-gothic-pron", "Noto Sans JP", sans-serif;
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
   color: $black;

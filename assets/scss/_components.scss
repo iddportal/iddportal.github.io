@@ -12,7 +12,18 @@
   background-color: v.$navy;
   top: calc(50dvh - 12.5dvmin);
   left: calc(50vw - 12.5dvmin);
+  font-family: "itc-avant-garde-gothic-pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3dvmin;
+  line-height: 1.1em;
 }
+
+
+.header.center {
+  text-align: left;
+}
+
 
 // body
 
@@ -310,7 +321,7 @@
   padding: 5px;
   color: v.$white;
   background-color: v.$navy;
-  font-weight: 1000;
+  font-weight: 400;
   font-size: max(16px, 2dvmin);
   @include v.res("sp") {
     font-size: 3.5dvmin;
@@ -334,7 +345,7 @@
   padding: 5px;
   color: v.$navy;
   background-color: v.$white;
-  font-weight: 800;
+  // font-weight: 800;
   font-size: max(12px, 1.5dvmin);
   overflow: hidden;
   @include v.res("sp") {
