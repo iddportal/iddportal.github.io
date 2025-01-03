@@ -633,6 +633,7 @@ svg {
   background-color: #ffffff;
   font-size: max(12px, 1.5dvmin);
   overflow: hidden;
+  font-weight: 700;
 }
 @media screen and (orientation: portrait) {
   .caption {
