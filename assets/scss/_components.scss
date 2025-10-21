@@ -326,6 +326,16 @@
   }
 }
 
+.blank {
+  display: flex;
+  width: 25vw;
+  height: 25vw;
+  @include v.res("sp") {
+    width: 0vw;
+    height: 0vw;
+  }
+}
+
 .year {
   display: inline-block;
   padding: 5px;

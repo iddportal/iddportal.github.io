@@ -610,6 +610,18 @@ svg {
   }
 }
 
+.blank {
+  display: flex;
+  width: 25vw;
+  height: 25vw;
+}
+@media screen and (orientation: portrait) {
+  .blank {
+    width: 0vw;
+    height: 0vw;
+  }
+}
+
 .year {
   display: inline-block;
   padding: 5px;
