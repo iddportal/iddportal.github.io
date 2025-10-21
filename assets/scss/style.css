@@ -356,8 +356,13 @@ svg {
 
 .border {
   border-style: solid;
-  border-width: 34px;
+  border-width: 2vw;
   box-sizing: border-box;
+}
+@media screen and (orientation: portrait) {
+  .border {
+    border-width: 4vw;
+  }
 }
 
 .main {
@@ -531,13 +536,12 @@ svg {
 
 .link_year {
   display: flex;
-  width: 25vw;
-  height: 25vw;
+  width: 100vw;
+  height: 4.5vw;
 }
 @media screen and (orientation: portrait) {
   .link_year {
-    width: 50vw;
-    height: 50vw;
+    height: 9vw;
   }
 }
 
@@ -585,12 +589,12 @@ svg {
 .link_head {
   display: flex;
   width: 100vw;
-  height: 12.5vw;
+  height: 10vw;
 }
 @media screen and (orientation: portrait) {
   .link_head {
     width: 100vw;
-    height: 25vw;
+    height: 20vw;
   }
 }
 
@@ -612,7 +616,7 @@ svg {
   color: #ffffff;
   background-color: #374466;
   font-weight: 400;
-  font-size: max(16px, 2dvmin);
+  font-size: 2.5dvmin;
 }
 @media screen and (orientation: portrait) {
   .year {
@@ -626,7 +630,7 @@ svg {
   color: #374466;
   background-color: #ffffff;
   font-weight: 1000;
-  font-size: max(16px, 1.8dvmin);
+  font-size: 2.5dvmin;
 }
 @media screen and (orientation: portrait) {
   .head {
@@ -639,7 +643,7 @@ svg {
   padding: 5px;
   color: #374466;
   background-color: #ffffff;
-  font-size: max(12px, 1.5dvmin);
+  font-size: 1.5dvmin;
   overflow: hidden;
   font-weight: 400;
 }
@@ -672,7 +676,7 @@ svg {
 }
 @media screen and (orientation: portrait) {
   .copyright {
-    font-size: 2.2dvmin;
+    font-size: min(12px, 2.2dvmin);
   }
 }
 /*# sourceMappingURL=style.css.map */
