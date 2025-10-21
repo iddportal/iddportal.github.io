@@ -79,16 +79,22 @@ $blue: #1955a6;
 $navy: #374466;
 
 .blue_bg {
-    background-color: $blue;
+  background-color: $blue;
 }
 .navy_bg {
-    background-color: $navy;
+  background-color: $navy;
 }
 .green_bg {
-    background-color: $green;
+  background-color: $green;
 }
 .white_bg {
-    background-color: $white;
+  background-color: $white;
+}
+.blue {
+  color: $blue;
+}
+.green {
+  color: $green;
 }
 .navy {
   color: $navy;
